@@ -6,7 +6,7 @@ import Spinner from "../components/Spinner";
 import "../styles/Loginpage.css";
 const Login = () => {
   const img =
-    "https://images.unsplash.com/photo-1593538312308-d4c29d8dc7f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80";
+    "https://plus.unsplash.com/premium_photo-1661443781814-333019eaad2d?q=80&w=1251&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   //from submit
@@ -38,7 +38,13 @@ const Login = () => {
       <div className="login-page ">
         {loading && <Spinner />}
         <div className="row container">
-          <h1>Expsanse Managment System - MERN STACK</h1>
+          <div className="text-anim">
+  <div>Expsanse</div>
+  <div>
+    <span>-Managment System</span>
+  </div>
+</div>
+
           <div className="col-md-6">
             <img src={img} alt="login-img" width={"100%"} height="100%" />
           </div>

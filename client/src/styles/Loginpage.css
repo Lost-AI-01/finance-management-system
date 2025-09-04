@@ -1,3 +1,5 @@
+
+
 .login-page {
   height: 100vh !important;
   width: 100vw !important;
@@ -5,10 +7,27 @@
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100%;
+  background: linear-gradient(-45deg, #ff9a76, #ff6f61, #ffb347, #ffcc70);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
+
+
 .login-form {
-  background-color: #b9bcccb6;
+  background-color: #20190eb6;
   margin-left: -15px;
   padding: 30px;
 }
@@ -17,14 +36,14 @@
   text-align: center;
   font-weight: bold;
   margin: 30px;
-  color: #344265;
+  color: #fca017b6;
 }
 
 .login-form .ant-form-item-label label {
-  color: #344265 !important;
+  color: #fca017b6 !important;
 }
 .login-form button {
-  background-color: #344265;
+  background-color: #fca017b6;
   color: white;
   outline: none;
 }
@@ -33,9 +52,65 @@
   color: white;
 }
 .login-form a {
-  color: #344265 !important;
+  color: #fca017b6 !important;
 }
 
 .login-form a:hover {
   color: black !important;
+}
+
+
+/*-----------------------------sliding animation for text ------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.text-anim {
+  text-align: center;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-anim div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-anim div:first-of-type {
+  animation: showup 7s infinite;
+}
+
+.text-anim div:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+.text-anim div:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes slidein {
+  0% { margin-left: -800px; }
+  20% { margin-left: -800px; }
+  35% { margin-left: 0px; }
+  100% { margin-left: 0px; }
+}
+
+@keyframes reveal {
+  0% { opacity: 0; width: 0px; }
+  20% { opacity: 1; width: 0px; }
+  30% { width: 355px; }
+  80% { opacity: 1; }
+  100% { opacity: 0; width: 355px; }
 }
