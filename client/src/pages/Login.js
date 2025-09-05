@@ -43,7 +43,7 @@ const Login = () => {
           <div className="text-anim">
   <div>Expsanse</div>
   <div>
-    <span>-Managment System</span>
+    <span>Managment System</span>
   </div>
 </div>
 
