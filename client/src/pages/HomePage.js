@@ -142,8 +142,8 @@ const HomePage = () => {
       {loading && <Spinner />}
       <div className="filters">
         <div>
-          <h6>Select Frequency</h6>
-          <Select value={frequency} onChange={(values) => setFrequency(values)}>
+          <h6>SELECT FREQUENCY</h6>
+          <Select value={frequency} onChange={(values) => setFrequency(values)} className="select">
             <Select.Option value="7">LAST 1 Week</Select.Option>
             <Select.Option value="30">LAST 1 Month</Select.Option>
             <Select.Option value="365">LAST 1 year</Select.Option>
@@ -157,7 +157,7 @@ const HomePage = () => {
           )}
         </div>
         <div className="filter-tab ">
-          <h6>Select Type</h6>
+          <h6>SELECT TYPE</h6>
           <Select value={type} onChange={(values) => setType(values)}>
             <Select.Option value="all">ALL</Select.Option>
             <Select.Option value="income">INCOME</Select.Option>

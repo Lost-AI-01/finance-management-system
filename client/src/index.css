@@ -36,7 +36,7 @@
   color: black;
 }
 .inactive-icon {
-  color: gray;
+  color: rgb(0, 0, 0);
 }
 
 .filter-tab .ant-select-selector {
@@ -54,3 +54,13 @@
   left: 0;
   width: 100%;
 }
+
+.filters{
+  background-color: #00ffff;
+  border-radius: 20px;
+}
+
+h6{
+  color: #00Aeff;
+}
+
