@@ -143,11 +143,12 @@ const HomePage = () => {
       <div className="filters">
         <div>
           <h6>SELECT FREQUENCY</h6>
-          <Select value={frequency} onChange={(values) => setFrequency(values)} className="select">
-            <Select.Option value="7">LAST 1 Week</Select.Option>
-            <Select.Option value="30">LAST 1 Month</Select.Option>
-            <Select.Option value="365">LAST 1 year</Select.Option>
-            <Select.Option value="custom">custom</Select.Option>
+          <Select value={frequency} onChange={(values) => setFrequency(values)}   className="custom-select"
+            popupClassName="my-select-popup" >
+            <Select.Option value="7">Last 1 Week</Select.Option>
+            <Select.Option value="30">Last 1 Month</Select.Option>
+            <Select.Option value="365">Last 1 year</Select.Option>
+            <Select.Option value="custom">Custom</Select.Option>
           </Select>
           {frequency === "custom" && (
             <RangePicker
@@ -158,7 +159,8 @@ const HomePage = () => {
         </div>
         <div className="filter-tab ">
           <h6>SELECT TYPE</h6>
-          <Select value={type} onChange={(values) => setType(values)}>
+          <Select value={type} onChange={(values) => setType(values)}   className="custom-select"
+          popupClassName="my-select-popup" >
             <Select.Option value="all">ALL</Select.Option>
             <Select.Option value="income">INCOME</Select.Option>
             <Select.Option value="expense">EXPENSE</Select.Option>

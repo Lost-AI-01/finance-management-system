@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
-  box-shadow: 0 0 3px gray;
+  box-shadow: 0 0 3px rgb(156, 21, 21);
   margin-bottom: 10px;
 }
 /* transection page */
@@ -56,11 +56,39 @@
 }
 
 .filters{
-  background-color: #00ffff;
+  background-color: #FACF55;
   border-radius: 20px;
 }
 
 h6{
-  color: #00Aeff;
+  color: #F9FBC3;
 }
 
+/* style the select box */
+.custom-select .ant-select-selector {
+  border-radius: 10px !important;
+  background-color: #ED4059 !important; /* main select bg */
+  border: 1px solid #666;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* style the popup dropdown */
+.my-select-popup {
+  border-radius: 10px !important;
+  background-color: #ED4059 !important;  /* dropdown bg */
+  padding: 5px;
+}
+
+/* style each option */
+.my-select-popup .ant-select-item {
+  background-color: #ED4059 !important;
+  border-radius: 8px !important;
+  margin: 2px 0;
+}
+
+/* hover / active state */
+.my-select-popup .ant-select-item-option-active {
+  background-color: #FACF55 !important;
+}

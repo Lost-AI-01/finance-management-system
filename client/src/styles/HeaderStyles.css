@@ -3,7 +3,7 @@
 
 /* Reduce overall navbar height */
 .navbar {
-  background-color: #007eff !important;
+  background-color:#ED4059  !important;
   padding: 2px 8px; /* smaller padding */
   min-height: 40px; /* reduce height */
 }
